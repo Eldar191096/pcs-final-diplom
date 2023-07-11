@@ -13,7 +13,10 @@ public class Client {
             Scanner scanner = new Scanner(System.in);
             String word = scanner.nextLine();
             out.println(word);
-
+            String searchResults;
+            while ((searchResults = in.readLine()) != null) {
+                System.out.println(searchResults);
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

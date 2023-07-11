@@ -24,7 +24,7 @@ public class Main {
                 ) {
                     Gson gson = new GsonBuilder().setPrettyPrinting().create();
                     String request = gson.toJson(engine.search(in.readLine()));
-                    System.out.println(request);
+                    out.println(request);
                 }
             }
         } catch (IOException e) {
